@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuPage">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+       <!-- <ImageButton
+            android:src="@drawable/home"
+            android:text="ALL BOOKS"
+            android:onClick="AllBooksActivity"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPageAndroid"
+        android:layout_width="580dp"
+
+        android:layout_height="580dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/container0"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" >
+
+
+        <ImageButton
+            android:src="@drawable/home"
+            android:text="ALL BOOKS"
+            android:onClick="AllBooksActivity"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+
+
+
+
+            <!--android:onClick="AllBooksActivity"-->
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/container1"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+
+        <ImageButton
+            android:src="@drawable/random"
+
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/container2"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+        <ImageButton
+            android:src="@drawable/mybooks"
+
+
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            />
+            </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+    </TableLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
